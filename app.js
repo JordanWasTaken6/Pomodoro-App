@@ -124,7 +124,7 @@ function completePeriod() {
     start();
   } else {
     switchMode("work");
-    render();
+    start();
   }
 }
 
