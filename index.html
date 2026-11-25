@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mode-work">
+  <main class="app">
+    <h1 id="mode-label">Work</h1>
+
+    <div class="timer">
+      <svg class="ring" viewBox="0 0 200 200" aria-hidden="true">
+        <circle class="ring-bg" cx="100" cy="100" r="90"></circle>
+        <circle class="ring-progress" id="ring-progress" cx="100" cy="100" r="90"></circle>
+      </svg>
+      <div class="time" id="time-display" role="timer" aria-live="off">25:00</div>
+    </div>
+
+    <div class="controls">
+      <button type="button" id="toggle-btn">Start</button>
+      <button type="button" id="reset-btn" class="secondary">Reset</button>
+    </div>
+
+    <p class="sessions">Sessions completed: <span id="session-count">0</span></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
